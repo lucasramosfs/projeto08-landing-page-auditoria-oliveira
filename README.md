@@ -1,4 +1,4 @@
-# Exercício 08 | Landing Page of a auditing company "Auditoria Olinveira"
+# Exercício 08 | Landing Page of a auditing company "Auditoria Oliveira"
 
 ## apling grid, flex-box and responsive
 
