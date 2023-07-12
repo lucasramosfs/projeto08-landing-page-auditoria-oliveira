@@ -14,10 +14,29 @@ body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    
+    background-color: #3ACBC8;
 }
 
+
+span{
+    font-family: 'Bodoni Moda', serif;
+    color: #3acbc8;
+    font-weight: 900;
+    font-size: 2rem;
+}
 /*----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,6 +59,8 @@ body{
     font-size: 3rem;
     font-weight: 700;
     transition: 0.3s;
+    font-family: 'Bodoni Moda', serif;
+    color: #3acbc8;
 }
 
 .header a:hover h1{
@@ -47,6 +68,15 @@ body{
 }
 
 /*---------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,6 +98,14 @@ body{
     text-transform: uppercase;
 }
 
+.hero:before{
+    content: url(../images/2-fotor-bg-remover-2023071121143.png);
+    position: absolute;
+    top: -150px;
+    animation: ao 1s infinite alternate ease-in-out;
+
+}
+
 .hero:after{
     content: url(../images/seta_preta.png);
     position: absolute;
@@ -77,8 +115,13 @@ body{
 }
 
 @keyframes downarrow{
-    0%{-webkit-transform: translateY(0); opacity: 0.4;}
-    100% {-webkit-transform: translateY(0.5em); opacity: 0.9;}
+    0%{-webkit-transform: translateY(0); opacity: 0.6;}
+    100% {-webkit-transform: translateY(0.5em); opacity: 2;}
+}
+
+@keyframes ao{
+    0%{opacity: 0.4;}
+    100%{opacity: 0.9;}
 }
 
 @media(max-width:345px){
@@ -111,8 +154,6 @@ body{
     .hero{
         height: 90vh;
         background-size: contain;
-        background-color: #fde176;
-        background-size: 1500px;
     }
 
     .hero h2{
@@ -125,13 +166,24 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* .about*/
 .about{
     grid-area: about;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #fff;
-    max-width: var(--max-width-size);
     margin: 0 auto;
 }
 
@@ -146,23 +198,37 @@ body{
 .about .item h3{
     font-weight: 700;
     font-size: 4rem;
+    margin-bottom: 15px;
 }
 
 .about .item p{
     font-weight: 400;
     font-size: 1.8rem;
-    margin: 30px 0;
+    margin: 15px 0 0;
+}
+
+.about .item h4{
+    font-weight: 700;
+    margin: 30px 0 0;
+    font-size: 1.8rem;
+}
+
+.about .item h4 span{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about .item .saiba-mais{
     font-size: 1.6rem;
     align-self: flex-start;
+    margin-top: 30px;
     
 }
 
 .about .item .saiba-mais:hover{
     font-weight: 700;
     text-shadow: 7px 5px 4px rgba(0, 0, 0, 0.3);
+    color: #3acbc8;
 }
 
 .about .image{
@@ -201,6 +267,12 @@ body{
 
 
 
+
+
+
+
+
+
 /* services */
 .services{
     grid-area: services;
@@ -214,7 +286,8 @@ body{
 }
 
 .services .service img{
-    width: 250px;
+    width: 300px;
+    height: 250px;
     margin-bottom: 30px;
 }
 
@@ -232,11 +305,11 @@ body{
 }
 
 .services .service:nth-child(1){
-    background-color: lightskyblue;
+    background-color: peachpuff;
 }
 
 .services .service:nth-child(2){
-    background-color: lightpink;
+    background-color: rosybrown;
 }
 
 @media(max-width:540px){
@@ -250,11 +323,21 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
 /* projects */
 .projects{
     grid-area: projects;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    /* border: 1px solid red; */
 }
 
 .projects .project img{
@@ -284,6 +367,14 @@ body{
 
 
 
+
+
+
+
+
+
+
+
 /* footer */
 .footer{
     grid-area: footer;
@@ -295,9 +386,15 @@ body{
 }
 
 .footer h4{
-    font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.footer h4:hover{
+    color: white;
 }
 
 .footer nav{
@@ -335,4 +432,29 @@ body{
 .footer .social a:hover{
     color: #fff;
 
+}
+
+.footer .direitos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    margin-top: 100px;
+}
+
+.footer .direitos span{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.footer .direitos a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.footer .direitos a:hover{
+    color: white;
 }
