@@ -8,12 +8,15 @@ body{
                         "hero hero hero hero"
                         "about about about about"
                         "services services services services"
+                        "clientes clientes clientes clientes"
                         "projects projects projects projects"
                         "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    background-color: mistyrose;
+
 }
 
 
@@ -143,10 +146,6 @@ span{
     100% {-webkit-transform: translateY(0.5em); opacity: 2;}
 }
 
-@keyframes ao{
-    0%{opacity: 0.4;}
-    100%{opacity: 0.9;}
-}
 
 @media(max-width:345px){
     .hero{
@@ -229,18 +228,51 @@ span{
 /* .about*/
 .about{
     grid-area: about;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #fff;
     margin: 0 auto;
+    width: 100%;
+    position: relative;
 }
 
-.about .item{
-    padding: 20%;
+.about .familia{
+    float: left;
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+
+.about .vivi{
+    float: right;
+    width: 50%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.about .certificado{
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+ .about .item.primeiro{
+    padding: 5%;
+    background-color: mistyrose;
+}
+
+.about .linha{
+    background-color: #3ACBC8;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+.about .item.segundo{
+    padding: 5%;
+    float: right;
+    background-color: lightgrey;
 }
 
 .about .item h3{
@@ -257,11 +289,16 @@ span{
 
 .about .item h4{
     font-weight: 700;
-    margin: 30px 0 0;
+    margin: 30px 0 20px;
     font-size: 1.8rem;
 }
 
-.about .item h4 span{
+.about .item h4 span{ 
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about .item.primeiro span{
     color: red;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -269,8 +306,6 @@ span{
 .about .item .saiba-mais{
     font-size: 1.6rem;
     align-self: flex-start;
-    margin-top: 30px;
-    
 }
 
 .about .item .saiba-mais:hover{
@@ -279,24 +314,24 @@ span{
     color: #3acbc8;
 }
 
-.about .image{
-    height: 100%;
-    width: 100%;
+.about .item.primeiro h2{
+    margin-top: 30px;
+
 }
 
-.about .image.right{
-    background: url(../images/bridge.jpg) center center no-repeat;
-    background-size: cover;
+
+.about a{
+    animation: ao 1s infinite alternate ease-in-out;
 }
 
-.about .image.left{
-    background: url(../images/sky.jpg) center center no-repeat;
-    background-size: cover;
+@keyframes ao{
+    0%{opacity: 0.4;}
+    100%{opacity: 1;}
 }
 
 @media(max-width:540px){
     .about .item{
-        text-align: center;
+        text-align: left;
     }
 
     .about{
@@ -306,6 +341,49 @@ span{
 
     .about .item .saiba-mais{
         align-self: center;
+    }
+
+    .about .item h3{
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .about .item.primeiro h2{
+        margin-top: 30px;
+        font-size: 2rem;
+    
+    }
+    
+}
+
+@media(min-width:1000px){
+
+    .about .item p{
+        font-weight: 400;
+        font-size: 3rem;
+        margin: 25px 0 0;
+    }
+
+    .about .item h4{
+        font-weight: 700;
+        /* margin: 30px 0 0; */
+        font-size: 3rem;
+    }
+
+    .about .item h4 span{
+        font-size: 3rem;
+    }
+
+    .about .item.primeiro span{
+        font-size: 2.4rem;
+    }
+
+    .about .item.segundo span{
+        font-size: 2.5rem;
+    }
+    .about .item .saiba-mais{
+        font-size: 2rem;       
     }
 }
 
@@ -379,13 +457,40 @@ span{
 
 
 
+/* clientes */
+
+.clientes{
+    grid-area: clientes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bodoni Moda', serif;
+    color: #3acbc8;
+    font-weight: 900;
+    font-size: 3rem;
+    background-color: #fff;
+}
+
+/*----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* projects */
 .projects{
     grid-area: projects;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    /* border: 1px solid red; */
 }
 
 .projects .project img{
@@ -396,6 +501,7 @@ span{
 .projects .project a:hover img{
     opacity: 0.7;
 }
+
 
 @media(max-width:760px){
     .projects{

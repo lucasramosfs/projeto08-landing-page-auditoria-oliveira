@@ -127,9 +127,9 @@
     }
 }
 
-@media(max-width:345px){
+@media(max-width:435px){
     .header .header-container nav{
-        transform:translateY(70px) ;
+        transform:translateY(120px) ;
 
     }
 

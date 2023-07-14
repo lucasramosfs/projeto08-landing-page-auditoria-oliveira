@@ -6,7 +6,12 @@ Putting into practice to create my first Landing Page
 
 ### Link para acessar:
 
-<a href="https://lucasramosfs.github.io/projeto08-landing-page-auditoria-oliveira/ " class="saiba-mais">Saiba mais</a>
+<a href="https://lucasramosfs.github.io/projeto08-landing-page-auditoria-oliveira/ " target="_blank">Saiba mais</a>
 
-<img src="src/images/final.png" alt="imagem de resultado final do exercício">
 
+<img src="src/images/Gravação-de-tela-de-2023-07-14-12-29-53.gif">
+
+<br>
+<br>
+
+<img src="src/images/Gravação-de-tela-de-2023-07-14-12-30-39.gif">
