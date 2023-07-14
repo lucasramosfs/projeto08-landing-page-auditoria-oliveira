@@ -14,7 +14,6 @@ body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color: #3ACBC8;
 }
 
 
@@ -84,26 +83,47 @@ span{
 .hero{
     grid-area: hero;
     height: 89vh;
-    background: url(../images/lemons.jpg) center center no-repeat;
+    background: url(../images/emp.jpg) bottom center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     position: relative;
+}
+
+.hero .logo{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
 }
 
 .hero h2{
     font-weight: 500;
     font-size: 4rem;
     text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+
 }
 
-.hero:before{
-    content: url(../images/2-fotor-bg-remover-2023071121143.png);
-    position: absolute;
-    top: -150px;
-    animation: ao 1s infinite alternate ease-in-out;
+.hero span{
+    font-size: 2rem;
 
+}
+
+.hero strong{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #6adbd9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
 }
 
 .hero:after{
@@ -112,6 +132,10 @@ span{
     height: 35px;
     bottom: 40px;
     animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+.hero .logo:hover{
+    cursor: default;
 }
 
 @keyframes downarrow{
@@ -136,7 +160,7 @@ span{
     }
 
     .hero h2{
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 }
 
@@ -153,12 +177,36 @@ span{
 @media(min-height:2340px){
     .hero{
         height: 90vh;
-        background-size: contain;
+        background-size: cover;
+        background-position: center center;
     }
 
     .hero h2{
-        font-size: 5rem;
+        font-weight: 500;
+        font-size: 6rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Bodoni Moda', serif;
+    
     }
+    
+    .hero span{
+        font-size: 4rem;
+    
+    }
+    
+    .hero strong{
+        font-size: 7rem;
+        font-weight: 900;
+        color: #6adbd9;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .hero h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+    }
+    
 }
 
 /*---------------------------------------------------------------*/
