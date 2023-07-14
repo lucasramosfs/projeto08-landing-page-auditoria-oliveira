@@ -138,11 +138,7 @@ span{
     content: url(../images/seta_preta.png);
     position: absolute;
     height: 35px;
-<<<<<<< HEAD
-    bottom: 40px;
-=======
-    bottom: 40px;
->>>>>>> refs/remotes/origin/main
+    bottom: 100px;
     animation: downarrow 0.6s infinite alternate ease-in-out;
 }
 
