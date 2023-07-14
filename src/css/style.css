@@ -137,7 +137,7 @@ span{
 .hero:after{
     content: url(../images/seta_preta.png);
     position: absolute;
-    height: 35px;
+    height: 100px;
     bottom: 40px;
     animation: downarrow 0.6s infinite alternate ease-in-out;
 }
