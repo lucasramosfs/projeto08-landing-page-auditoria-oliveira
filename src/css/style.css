@@ -16,6 +16,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-color: mistyrose;
+    position: relative;
 
 }
 
@@ -24,7 +25,7 @@ span{
     font-family: 'Bodoni Moda', serif;
     color: #3acbc8;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 /*----------------------------------------------------------------*/
 
@@ -47,6 +48,9 @@ span{
 .header{
     grid-area: header;
     background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 .header .header-container{
@@ -92,6 +96,7 @@ span{
     justify-content: center;
     align-content: center;
     position: relative;
+    transform: translateY(80px);
 }
 
 .hero .logo{
@@ -150,8 +155,16 @@ span{
 @media(max-width:345px){
     .hero{
         height: 60vh;
+        transform: translateY(130px);
     }
 }
+
+@media(max-width:430px){
+    .hero{
+        transform: translateY(130px);
+    }
+}
+
 
 @media(max-width:540px){
     .hero{
@@ -412,20 +425,20 @@ span{
 }
 
 .services .service img{
-    width: 300px;
+    width: 350px;
     height: 250px;
     margin-bottom: 30px;
 }
 
 .services .service h3{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .services .service p{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    max-width: 400px;
+    max-width: 500px;
     margin: 20px auto 0;
     line-height: 25px;
 }
@@ -441,6 +454,18 @@ span{
 @media(max-width:540px){
     .services{
         grid-template-columns: 1fr;
+    }
+
+    .services .service p{
+        font-size: 2rem;
+    }
+
+    span{
+        font-size: 2rem;
+    }
+
+    .services .service h3{
+        font-size: 1.8rem;
     }
 }
 
